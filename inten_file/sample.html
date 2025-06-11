@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Courses and Interests</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        .parent {
+            display: flex;
+            border: 2px solid #fff;
+            align-items: center;
+        }
+        .child-content {
+            padding: 5px;
+            width: 500px;
+        }
+        .child-image {
+            padding: 15px;
+        }
+        .header {
+            display: block;
+            height: 30px;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 30px;
+            margin-top: 5px;
+            background-color: #aaa;
+        }
+        .content {
+            line-height: 30px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+        <div class="child-content">
+            <span class="header">Courses</span>
+            <span class="content">Here are some courses I've taken:</span>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Course Number</th>
+                        <th>Course Title</th>
+                        <th>Semester Taken</th>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><b>For Credit</b></td>
+                    </tr>
+                    <tr>
+                        <td>6.813</td>
+                        <td>User Interface Design</td>
+                        <td>Spring 2014</td>
+                    </tr>
+                    <tr>
+                        <td>6.034</td>
+                        <td>Artificial Intelligence</td>
+                        <td>Fall 2013</td>
+                    </tr>
+                    <tr>
+                        <td>6.006</td>
+                        <td>Introduction to Algorithms</td>
+                        <td>Fall 2013</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><b>Listener</b></td>
+                    </tr>
+                    <tr>
+                        <td>6.867</td>
+                        <td>Machine Learning</td>
+                        <td>Fall 2013</td>
+                    </tr>
+                    <tr>
+                        <td>6.830</td>
+                        <td>Database Systems</td>
+                        <td>Fall 2012</td>
+                    </tr>
+                </tbody>
+            </table>
+            <span class="header">Interests</span>
+            <span class="content">I am interested HCI, memes, and youtube videos.</span>
+        </div>  
+        <div class="child-image">
+            <img
+            src="catfor19.jpeg"
+            alt="Funny lab animal"
+            class="img-fluid"
+            style="max-width: 200px;"/>
+        </div>
+    </div>
+  </body>
+</html>
