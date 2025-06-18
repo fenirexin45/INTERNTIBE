@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+    function cal_multiple_int_and_sum() {
+      var sum = 0;
+      var num;
+
+      do {
+        num = parseInt(prompt("Enter a number (to stop use 0):"));
+        if (!isNaN(num) && num !== 0) {
+          sum += num;
+        }
+      } while (num !== 0);
+
+      console.log("Total Sum:", sum);
+      alert("Total Sum: " + sum);
+    }
+
+    cal_multiple_int_and_sum();
+  </script>
+</body>
+</html>

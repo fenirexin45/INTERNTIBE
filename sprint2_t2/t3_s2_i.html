@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+  
+  <script>
+    var previous = 0;
+
+    for (var current = 1; current <= 10; current++) {
+      var sum = current + previous;
+      console.log(`Curr: ${current}, Prev: ${previous}, Sum: ${sum}`);
+      previous = current;
+    }
+  </script>
+</body>
+</html>

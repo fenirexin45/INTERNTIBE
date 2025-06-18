@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+    function isstrongpassword(pass) {
+      const lengthCheck = pass.length >= 8;
+      const lcase = /[a-z]/.test(pass);
+      const ucase = /[A-Z]/.test(pass);
+      const digit = /\d/.test(pass);
+      const spl = /[\W_]/.test(pass);
+
+      return lengthCheck && lcase && ucase && digit && spl;
+    }
+
+    let uPassword = prompt("Enter a password to check:");
+    if (isstrongpassword(uPassword)) {
+      console.log("Password is strong.");
+    } else {
+      console.log("Password is not strong.");
+    }
+  </script>
+</body>
+</html>

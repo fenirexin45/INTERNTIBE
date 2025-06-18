@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <body>
+  <script>
+    function t1_s2() {
+      var  arr1 = [5,2,-7,3,-2,-1];
+      var neg_num = arr1.filter(num => num < 0);
+      console.log("Negative Numbers:", neg_num);
+
+      var arr2 = [5,10,15,20,22,23];
+      var replaced = arr2.map(num => num % 2 !== 0 ? 0 : num);
+      console.log("Replace Odd Numbers with 0:", replaced);
+    }
+
+    t1_s2();
+  </script>
+</body>
+</html>
