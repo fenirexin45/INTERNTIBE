@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      margin: 200px;
+      padding: 0;
+      border: 3px solid black;
+      width:345px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      width:345px;
+    }
+
+    header, footer {
+      background: violet;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .nav-bar {
+      background: indigo;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .content {
+      display: flex;
+      flex: 1;
+    }
+
+    .left-panel {
+      flex: 1;
+      background:rgb(239, 174, 239);
+      padding: 50px;
+      text-align: center;
+    }
+
+    .main-content {
+      flex: 3;
+      padding: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>Header</header>
+    <div class="nav-bar">Navigation Bar</div>
+    <div class="content">
+      <div class="left-panel">Left Panel</div>
+      <div class="main-content">Main Content</div>
+    </div>
+    <footer>Footer</footer>
+  </div>
+</body>
+</html>
