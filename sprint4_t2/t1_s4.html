@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fetch & Display Selected Values</title>
+</head>
+<body>
+
+  <h3>Select a Gender:</h3>
+  <input type="radio" name="gender" value="Male"> Male
+  <input type="radio" name="gender" value="Female"> Female
+  <input type="radio" name="gender" value="Other"> Other
+
+  <h3>Select Hobbies:</h3>
+  <input type="checkbox" name="hobby" value="Singing "> Singing
+  <input type="checkbox" name="hobby" value="Podcasting"> Podcasting
+  <input type="checkbox" name="hobby" value="Baking"> Baking
+
+  <br><br>
+  <button onclick="fetchValues()">Submit</button>
+
+  <p id="output"></p>
+
+  <script>
+    function fetchValues() {
+    
+      var selectedRadio = document.querySelector('input[name="gender"]:checked');
+      var gender = selectedRadio ? selectedRadio.value : "None";
+
+    
+      var checkboxes = document.querySelectorAll('input[name="hobby"]:checked');
+      var hobbies = [];
+      for (var i = 0; i < checkboxes.length; i++) {
+        hobbies.push(checkboxes[i].value);
+      }
+
+     
+      document.getElementById("output").innerHTML =
+        "<b style='color: #3B060A;'>Selected Gender:</b> " + gender + "<br>" +
+        "<b style='color: #5A827E;'>Selected Hobbies:</b> " + (hobbies.length > 0 ? hobbies.join(", ") : "None");
+    }
+  </script>
+
+</body>
+</html>
