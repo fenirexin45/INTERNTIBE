@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <input type="text" id="inputBox" onchange="updateHeading()" placeholder= "Enter something">
+  <h1 id="resultText"></h1>
+
+  <script>
+    function updateHeading() {
+      let value = document.getElementById("inputBox").value;
+      document.getElementById("resultText").innerHTML = value;
+    }
+  </script>
+
+</body>
+</html>

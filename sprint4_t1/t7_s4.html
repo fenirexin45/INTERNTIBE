@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <div onmouseenter="mouseEntered()" onmouseleave="mouseLeft()" style="width:200px; height:100px; background-color:lightgray;"></div>
+  <h2 id="msg"></h2>
+
+  <script>
+    function mouseEntered() {
+      document.getElementById("msg").innerHTML = "Mouse entered!";
+    }
+
+    function mouseLeft() {
+      document.getElementById("msg").innerHTML = "Mouse left!";
+    }
+  </script>
+
+</body>
+</html>

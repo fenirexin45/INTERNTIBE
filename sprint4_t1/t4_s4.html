@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <input type="text" id="userInput" placeholder="Enter something">
+  <button onclick="showInParagraph()">Show in Paragraph</button>
+  <p id="outputText"></p>
+
+  <script>
+    function showInParagraph() {
+      let value = document.getElementById("userInput").value;
+      document.getElementById("outputText").innerHTML = value;
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <button onkeydown="keyPressed()" onkeyup="keyReleased()">Focus and Press a Key</button>
+  <h1 id="status"></h1>
+
+  <script>
+    function keyPressed() {
+      document.getElementById("status").innerHTML = "Key Pressed!";
+    }
+
+    function keyReleased() {
+      document.getElementById("status").innerHTML = "Key released!";
+    }
+  </script>
+
+</body>
+</html>
