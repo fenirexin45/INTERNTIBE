@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+  <h2>Print Array Indexes using keys()</h2>
+  <button onclick="printIndexes()">Print Indexes</button>
+
+  <script>
+    function printIndexes() {
+      const items = ['apple', 'banana', 'cherry'];
+
+      const keys = items.keys();
+
+      for (let index of keys) {
+        console.log(index);
+      }
+    }
+  </script>
+
+</body>
+</html>

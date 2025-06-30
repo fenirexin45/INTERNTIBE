@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+  <h2>Find First and Last Occurrence</h2>
+
+  <input type="number" id="searchValue" placeholder="Enter a number">
+  <button onclick="findIndexes()">Find Indexes</button>
+
+  <script>
+    function findIndexes() {
+      const numbers = [1, 2, 3, 2, 4, 2, 5];
+      const value = parseInt(document.getElementById("searchValue").value);
+
+      const result = {
+        firstIndex: numbers.indexOf(value),
+        lastIndex: numbers.lastIndexOf(value)
+      };
+
+      console.log("Result:", result);
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+  <h2>Get Product of Numbers using Reduce</h2>
+  <button onclick="getProduct()">Calculate Product</button>
+
+  <script>
+    function getProduct() {
+      const numbers = [1, 2, 3, 4, 5];
+
+      // Use reduce to calculate product
+      const product = numbers.reduce((acc, num) => acc * num, 1);
+
+      console.log("Product of Numbers:", product);
+    }
+  </script>
+
+</body>
+</html>

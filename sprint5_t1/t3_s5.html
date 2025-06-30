@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+  <h2>Find Student Score</h2>
+
+  <input type="text" id="studentName" placeholder="Enter student name">
+  <button onclick="getStudentScore()">Get Score</button>
+
+  <script>
+    const students = [
+      { name: 'Alice', score: 85 },
+      { name: 'Bob', score: 92 },
+      { name: 'Ali', score: 78 }
+    ];
+
+    function getStudentScore() {
+      const nameInput = document.getElementById("studentName").value;
+
+      // Create a Map with student names and scores
+      const studentMap = new Map();
+      students.forEach(student => {
+        studentMap.set(student.name, student.score);
+      });
+
+      // Get score by name
+      const score = studentMap.get(nameInput);
+
+      // Output result
+      if (score !== undefined) {
+        console.log(`Score of ${nameInput}:`, score);
+      } else {
+        console.log("Student not found");
+      }
+    }
+  </script>
+
+</body>
+</html>

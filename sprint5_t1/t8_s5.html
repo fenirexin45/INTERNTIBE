@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+  <h2>Check if Variable is an Array</h2>
+
+  <input type="text" id="inputValue" placeholder="Enter value (e.g., [1,2,3] or 'Hello')">
+  <button onclick="checkIfArray()">Check</button>
+
+  <script>
+    function checkIfArray() {
+      const input = document.getElementById("inputValue").value;
+
+      let parsedInput;
+      try {
+        parsedInput = JSON.parse(input);
+      } catch (e) {
+        parsedInput = input; // Keep it as string if JSON.parse fails
+      }
+
+      const result = Array.isArray(parsedInput);
+      console.log("Is Array:", result);
+    }
+  </script>
+
+</body>
+</html>
