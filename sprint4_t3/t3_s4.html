@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+</head>
+<body>
+
+  <script>
+    // 1. Create a JSON string with properties
+    let jsonString = '[{"Name": "Fenina", "email": "frex@gmail.com", "Skills": ["HTML", "CSS", "JavaScript"]},' +
+                     '{"Name": "Alice", "email": "alice@gmail.com", "Skills": ["Python", "Django", "SQL"]},' +
+                     '{"Name": "John", "email": "john@gmail.com", "Skills": ["C++", "Java", "React"]}]';
+
+    // 2. Parse the JSON string into an object
+    let users = JSON.parse(jsonString);
+
+    // 3. Log the values to the console 
+    users.forEach(function(user) {
+      console.log(user);
+    });
+  </script>
+</body>
+</html>
